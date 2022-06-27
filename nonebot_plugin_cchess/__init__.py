@@ -132,7 +132,7 @@ for i in range(1, 9):
         aliases={f"象棋lv{i}", f"象棋人机Lv{i}", f"象棋Lv{i}"},
         rule=smart_to_me,
     )
-shortcut("停止下棋", ["--stop"], aliases={"结束下棋", "停止游戏", "结束游戏"}, rule=game_running)
+shortcut("停止下棋", ["--stop"], aliases={"结束下棋", "停止对局", "结束对局"}, rule=game_running)
 shortcut("查看棋盘", ["--show"], aliases={"查看棋局", "显示棋盘", "显示棋局"}, rule=game_running)
 shortcut("悔棋", ["--repent"], rule=game_running)
 shortcut("下棋", rule=game_running)
